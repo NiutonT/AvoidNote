@@ -41,6 +41,7 @@
     },
     "dependencies": {
         "aos": "^2.3.4",
+        "copy-webpack-plugin": "^6.0.1",
         "glob-all": "^3.2.1"
     }
 }
