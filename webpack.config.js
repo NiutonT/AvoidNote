@@ -4,6 +4,7 @@ const HtmlWebpackPlugin = require("html-webpack-plugin");
 const path = require("path");
 const glob = require("glob-all");
 const parts = require("./webpack.parts");
+const CopyPlugin = require('copy-webpack-plugin');
 
 
 const PATHS = {
@@ -19,6 +20,11 @@ const commonConfig = merge([{
                 filename: "./index.html",
                 minify: false
             }),
+            new CopyPlugin({
+                patterns: [
+                  { from: 'src/assets', to: 'assets' }
+                ],
+              }),
         ],
     },
     parts.loadJavaScript({ include: PATHS.app }),

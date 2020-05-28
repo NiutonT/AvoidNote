@@ -1,0 +1,265 @@
+{
+  "HtmlWebpackCompiler": [
+    {
+      "modules": {
+        "byIdentifier": {
+          "node_modules/html-webpack-plugin/lib/loader.js!node_modules/html-loader/dist/cjs.js??ref--5!src/index.html": 0,
+          "node_modules/html-loader/dist/runtime/getUrl.js": 1,
+          "node_modules/file-loader/dist/cjs.js?name=i/[name].[ext]!node_modules/image-webpack-loader/index.js??ref--9-1!src/i/logo.png": 2,
+          "node_modules/file-loader/dist/cjs.js?name=i/[name].[ext]!node_modules/image-webpack-loader/index.js??ref--9-1!src/i/000.jpg": 3,
+          "node_modules/file-loader/dist/cjs.js??ref--7!src/media/video31.mp4": 4,
+          "node_modules/file-loader/dist/cjs.js?name=i/[name].[ext]!node_modules/image-webpack-loader/index.js??ref--9-1!src/i/about-img2.jpg": 5,
+          "node_modules/file-loader/dist/cjs.js?name=i/[name].[ext]!node_modules/image-webpack-loader/index.js??ref--9-1!src/i/film.svg": 6,
+          "node_modules/file-loader/dist/cjs.js?name=i/[name].[ext]!node_modules/image-webpack-loader/index.js??ref--9-1!src/i/Publicidad2.png": 7,
+          "node_modules/file-loader/dist/cjs.js?name=i/[name].[ext]!node_modules/image-webpack-loader/index.js??ref--9-1!src/i/gameapps.svg": 8,
+          "node_modules/file-loader/dist/cjs.js?name=i/[name].[ext]!node_modules/image-webpack-loader/index.js??ref--9-1!src/i/socialmedia.svg": 9,
+          "node_modules/file-loader/dist/cjs.js?name=i/[name].[ext]!node_modules/image-webpack-loader/index.js??ref--9-1!src/i/Arreglos.svg": 10,
+          "node_modules/file-loader/dist/cjs.js?name=i/[name].[ext]!node_modules/image-webpack-loader/index.js??ref--9-1!src/i/songwriting.svg": 11,
+          "node_modules/file-loader/dist/cjs.js?name=i/[name].[ext]!node_modules/image-webpack-loader/index.js??ref--9-1!src/i/lluvia.jpg": 12,
+          "node_modules/file-loader/dist/cjs.js?name=i/[name].[ext]!node_modules/image-webpack-loader/index.js??ref--9-1!src/i/karla2.jpg": 13,
+          "node_modules/file-loader/dist/cjs.js?name=i/[name].[ext]!node_modules/image-webpack-loader/index.js??ref--9-1!src/i/karla1.jpg": 14,
+          "node_modules/file-loader/dist/cjs.js?name=i/[name].[ext]!node_modules/image-webpack-loader/index.js??ref--9-1!src/i/tintaseca.jpg": 15,
+          "node_modules/file-loader/dist/cjs.js?name=i/[name].[ext]!node_modules/image-webpack-loader/index.js??ref--9-1!src/i/Dragon.jpg": 16,
+          "node_modules/file-loader/dist/cjs.js?name=i/[name].[ext]!node_modules/image-webpack-loader/index.js??ref--9-1!src/i/reeldrom.jpg": 17,
+          "node_modules/file-loader/dist/cjs.js?name=i/[name].[ext]!node_modules/image-webpack-loader/index.js??ref--9-1!src/i/contacto.png": 18
+        },
+        "usedIds": {
+          "0": 0,
+          "1": 1,
+          "2": 2,
+          "3": 3,
+          "4": 4,
+          "5": 5,
+          "6": 6,
+          "7": 7,
+          "8": 8,
+          "9": 9,
+          "10": 10,
+          "11": 11,
+          "12": 12,
+          "13": 13,
+          "14": 14,
+          "15": 15,
+          "16": 16,
+          "17": 17,
+          "18": 18
+        }
+      },
+      "chunks": {
+        "byName": {
+          "HtmlWebpackPlugin_0": 0
+        },
+        "bySource": {},
+        "usedIds": [
+          0
+        ]
+      }
+    }
+  ],
+  "mini-css-extract-plugin node_modules/css-loader/dist/cjs.js!node_modules/postcss-loader/src/index.js??ref--8-2!src/css/w3pro.css": [
+    {
+      "modules": {
+        "byIdentifier": {
+          "node_modules/css-loader/dist/cjs.js!node_modules/postcss-loader/src/index.js??ref--8-2!src/css/w3pro.css": 0,
+          "node_modules/css-loader/dist/runtime/api.js": 1
+        },
+        "usedIds": {
+          "0": 0,
+          "1": 1
+        }
+      },
+      "chunks": {
+        "byName": {
+          "mini-css-extract-plugin": 0
+        },
+        "bySource": {},
+        "usedIds": [
+          0
+        ]
+      }
+    }
+  ],
+  "mini-css-extract-plugin node_modules/css-loader/dist/cjs.js!node_modules/postcss-loader/src/index.js??ref--8-2!src/css/font-awesome.css": [
+    {
+      "modules": {
+        "byIdentifier": {
+          "node_modules/css-loader/dist/cjs.js!node_modules/postcss-loader/src/index.js??ref--8-2!src/css/font-awesome.css": 0,
+          "node_modules/css-loader/dist/runtime/api.js": 1,
+          "node_modules/css-loader/dist/runtime/getUrl.js": 2,
+          "node_modules/file-loader/dist/cjs.js??ref--6!src/fonts/fontawesome-webfont.woff2?v=4.7.0": 3,
+          "node_modules/file-loader/dist/cjs.js??ref--6!src/fonts/fontawesome-webfont.woff?v=4.7.0": 4,
+          "node_modules/file-loader/dist/cjs.js??ref--6!src/fonts/fontawesome-webfont.ttf?v=4.7.0": 5,
+          "node_modules/file-loader/dist/cjs.js??ref--6!src/fonts/fontawesome-webfont.eot": 6,
+          "node_modules/file-loader/dist/cjs.js?name=i/[name].[ext]!node_modules/image-webpack-loader/index.js??ref--9-1!src/fonts/fontawesome-webfont.svg?v=4.7.0": 7
+        },
+        "usedIds": {
+          "0": 0,
+          "1": 1,
+          "2": 2,
+          "3": 3,
+          "4": 4,
+          "5": 5,
+          "6": 6,
+          "7": 7
+        }
+      },
+      "chunks": {
+        "byName": {
+          "mini-css-extract-plugin": 0
+        },
+        "bySource": {},
+        "usedIds": [
+          0
+        ]
+      }
+    }
+  ],
+  "mini-css-extract-plugin node_modules/css-loader/dist/cjs.js!node_modules/postcss-loader/src/index.js??ref--8-2!src/css/aos.css": [
+    {
+      "modules": {
+        "byIdentifier": {
+          "node_modules/css-loader/dist/cjs.js!node_modules/postcss-loader/src/index.js??ref--8-2!src/css/aos.css": 0,
+          "node_modules/css-loader/dist/runtime/api.js": 1
+        },
+        "usedIds": {
+          "0": 0,
+          "1": 1
+        }
+      },
+      "chunks": {
+        "byName": {
+          "mini-css-extract-plugin": 0
+        },
+        "bySource": {},
+        "usedIds": [
+          0
+        ]
+      }
+    }
+  ],
+  "mini-css-extract-plugin node_modules/css-loader/dist/cjs.js!node_modules/postcss-loader/src/index.js??ref--8-2!src/css/iframe-lightbox.css": [
+    {
+      "modules": {
+        "byIdentifier": {
+          "node_modules/css-loader/dist/cjs.js!node_modules/postcss-loader/src/index.js??ref--8-2!src/css/iframe-lightbox.css": 0,
+          "node_modules/css-loader/dist/runtime/api.js": 1
+        },
+        "usedIds": {
+          "0": 0,
+          "1": 1
+        }
+      },
+      "chunks": {
+        "byName": {
+          "mini-css-extract-plugin": 0
+        },
+        "bySource": {},
+        "usedIds": [
+          0
+        ]
+      }
+    }
+  ],
+  "mini-css-extract-plugin node_modules/css-loader/dist/cjs.js!node_modules/postcss-loader/src/index.js??ref--8-2!src/css/style.css": [
+    {
+      "modules": {
+        "byIdentifier": {
+          "node_modules/css-loader/dist/cjs.js!node_modules/postcss-loader/src/index.js??ref--8-2!src/css/style.css": 0,
+          "node_modules/css-loader/dist/runtime/api.js": 1,
+          "node_modules/css-loader/dist/runtime/getUrl.js": 2,
+          "node_modules/file-loader/dist/cjs.js??ref--6!src/fonts/Intro.woff": 3,
+          "node_modules/file-loader/dist/cjs.js??ref--6!src/fonts/Intro.ttf": 4,
+          "node_modules/file-loader/dist/cjs.js??ref--6!src/fonts/Intro.eot": 5
+        },
+        "usedIds": {
+          "0": 0,
+          "1": 1,
+          "2": 2,
+          "3": 3,
+          "4": 4,
+          "5": 5
+        }
+      },
+      "chunks": {
+        "byName": {
+          "mini-css-extract-plugin": 0
+        },
+        "bySource": {},
+        "usedIds": [
+          0
+        ]
+      }
+    }
+  ],
+  "modules": {
+    "byIdentifier": {
+      "node_modules/aos/dist/aos.js": 0,
+      "node_modules/mini-css-extract-plugin/dist/loader.js!node_modules/css-loader/dist/cjs.js!node_modules/postcss-loader/src/index.js??ref--8-2!src/css/w3pro.css": 1,
+      "node_modules/mini-css-extract-plugin/dist/loader.js!node_modules/css-loader/dist/cjs.js!node_modules/postcss-loader/src/index.js??ref--8-2!src/css/font-awesome.css": 2,
+      "node_modules/mini-css-extract-plugin/dist/loader.js!node_modules/css-loader/dist/cjs.js!node_modules/postcss-loader/src/index.js??ref--8-2!src/css/aos.css": 3,
+      "node_modules/babel-loader/lib/index.js!src/js/main.js": 4,
+      "node_modules/mini-css-extract-plugin/dist/loader.js!node_modules/css-loader/dist/cjs.js!node_modules/postcss-loader/src/index.js??ref--8-2!src/css/iframe-lightbox.css": 5,
+      "node_modules/mini-css-extract-plugin/dist/loader.js!node_modules/css-loader/dist/cjs.js!node_modules/postcss-loader/src/index.js??ref--8-2!src/css/style.css": 6,
+      "node_modules/html-loader/dist/cjs.js??ref--5!src/index.html": 7,
+      "node_modules/html-loader/dist/runtime/getUrl.js": 8,
+      "node_modules/file-loader/dist/cjs.js?name=i/[name].[ext]!node_modules/image-webpack-loader/index.js??ref--9-1!src/i/logo.png": 9,
+      "node_modules/file-loader/dist/cjs.js?name=i/[name].[ext]!node_modules/image-webpack-loader/index.js??ref--9-1!src/i/000.jpg": 10,
+      "node_modules/file-loader/dist/cjs.js??ref--7!src/media/video31.mp4": 11,
+      "node_modules/file-loader/dist/cjs.js?name=i/[name].[ext]!node_modules/image-webpack-loader/index.js??ref--9-1!src/i/about-img2.jpg": 12,
+      "node_modules/file-loader/dist/cjs.js?name=i/[name].[ext]!node_modules/image-webpack-loader/index.js??ref--9-1!src/i/film.svg": 13,
+      "node_modules/file-loader/dist/cjs.js?name=i/[name].[ext]!node_modules/image-webpack-loader/index.js??ref--9-1!src/i/Publicidad2.png": 14,
+      "node_modules/file-loader/dist/cjs.js?name=i/[name].[ext]!node_modules/image-webpack-loader/index.js??ref--9-1!src/i/gameapps.svg": 15,
+      "node_modules/file-loader/dist/cjs.js?name=i/[name].[ext]!node_modules/image-webpack-loader/index.js??ref--9-1!src/i/socialmedia.svg": 16,
+      "node_modules/file-loader/dist/cjs.js?name=i/[name].[ext]!node_modules/image-webpack-loader/index.js??ref--9-1!src/i/Arreglos.svg": 17,
+      "node_modules/file-loader/dist/cjs.js?name=i/[name].[ext]!node_modules/image-webpack-loader/index.js??ref--9-1!src/i/songwriting.svg": 18,
+      "node_modules/file-loader/dist/cjs.js?name=i/[name].[ext]!node_modules/image-webpack-loader/index.js??ref--9-1!src/i/lluvia.jpg": 19,
+      "node_modules/file-loader/dist/cjs.js?name=i/[name].[ext]!node_modules/image-webpack-loader/index.js??ref--9-1!src/i/karla2.jpg": 20,
+      "node_modules/file-loader/dist/cjs.js?name=i/[name].[ext]!node_modules/image-webpack-loader/index.js??ref--9-1!src/i/karla1.jpg": 21,
+      "node_modules/file-loader/dist/cjs.js?name=i/[name].[ext]!node_modules/image-webpack-loader/index.js??ref--9-1!src/i/tintaseca.jpg": 22,
+      "node_modules/file-loader/dist/cjs.js?name=i/[name].[ext]!node_modules/image-webpack-loader/index.js??ref--9-1!src/i/Dragon.jpg": 23,
+      "node_modules/file-loader/dist/cjs.js?name=i/[name].[ext]!node_modules/image-webpack-loader/index.js??ref--9-1!src/i/reeldrom.jpg": 24,
+      "node_modules/file-loader/dist/cjs.js?name=i/[name].[ext]!node_modules/image-webpack-loader/index.js??ref--9-1!src/i/contacto.png": 25,
+      "node_modules/babel-loader/lib/index.js!src/index.js b6448c4c55a2d85153f8dd9c488c3e78": 26
+    },
+    "usedIds": {
+      "0": 0,
+      "1": 1,
+      "2": 2,
+      "3": 3,
+      "4": 4,
+      "5": 5,
+      "6": 6,
+      "7": 7,
+      "8": 8,
+      "9": 9,
+      "10": 10,
+      "11": 11,
+      "12": 12,
+      "13": 13,
+      "14": 14,
+      "15": 15,
+      "16": 16,
+      "17": 17,
+      "18": 18,
+      "19": 19,
+      "20": 20,
+      "21": 21,
+      "22": 22,
+      "23": 23,
+      "24": 24,
+      "25": 25,
+      "26": 26
+    }
+  },
+  "chunks": {
+    "byName": {
+      "main": 0,
+      "manifest": 1
+    },
+    "bySource": {},
+    "usedIds": [
+      0,
+      1
+    ]
+  }
+}
