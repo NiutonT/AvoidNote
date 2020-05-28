@@ -1,0 +1,515 @@
+@font-face {
+    font-family: "Intro";
+    src: url("../fonts/Intro.woff") format("woff"), url("../fonts/Intro.ttf") format("truetype"), url("../fonts/Intro.eot") format("eot");
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+/* Del Template de w3  */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Intro", sans-serif
+}
+
+body,
+html {
+    color: #666666;
+    font-family: "Open Sans", sans-serif;
+    height: 100%;
+    line-height: 1.8;
+    background: #EFF5F5;
+}
+
+.w3-bar .w3-button {
+    padding: 16px;
+}
+
+
+/* Fin del Template */
+
+
+/* ______________________________________________________________ */
+
+#general {
+    max-width: 1920px;
+    margin: auto;
+    width: 100%;
+}
+
+#myNavbar {
+    background-color: #347284;
+    color: #ffffff;
+    height: 72px!important;
+    max-width: 1920px!important;
+    margin: auto!important;
+    width: 100%;
+}
+
+#mySidebar {
+    background-color: #347284;
+    color: #ffffff;
+}
+
+#myVideo {
+    bottom: 0em;
+    max-width: 100%;
+    object-fit: cover;
+    object-position: 0px 0px;
+}
+
+#intro {
+    top: 72px;
+    background-color: #357284;
+    width: 100vw;
+    height: calc((100vh * 9/16)-72);
+}
+
+
+/* Back to top button */
+
+.back-to-top {
+    position: fixed;
+    display: none;
+    background: #347284;
+    color: #fff;
+    padding: 2px 20px 8px 20px;
+    font-size: 16px;
+    border-radius: 4px 4px 0 0;
+    right: 15px;
+    bottom: 0;
+    transition: none;
+}
+
+.back-to-top:focus {
+    background: linear-gradient(45deg, #1f85a2, #1f85a2);
+    color: #fff;
+    outline: none;
+}
+
+.back-to-top:hover {
+    background: #1f85a2;
+    color: #fff;
+}
+
+#enviar {
+    color: rgb(246, 249, 249);
+    background-color: #357284;
+}
+
+
+
+/* iconos sociales para contactar */
+
+.consocial a {
+    text-decoration: none;
+}
+
+.consocial i.fa {
+    height: 70px;
+    width: 70px;
+    font-size: xx-large;
+    position: relative;
+    flex-grow: 3;
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 400px;
+    background-color: #BC2A6B;
+    color: #ffffff;
+    justify-content: center;
+    align-items: center;
+    display: inline-flex;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.6);
+}
+
+@media (max-width: 768px) {
+    .consocial i.fa {
+        height: 30px;
+        width: 30px;
+        font-size: large;
+    }
+}
+
+
+/*  FORMULARIO mensajes de si se ha enviado o no */
+
+#contact .form #sendmessage {
+    color: #1dc8cd;
+    border: 1px solid #1dc8cd;
+    display: none;
+    text-align: center;
+    padding: 15px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+#contact .form #errormessage {
+    color: red;
+    display: none;
+    border: 1px solid red;
+    text-align: center;
+    padding: 15px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+#contact .form #sendmessage.show,
+#contact .form #errormessage.show,
+#contact .form .show {
+    display: block;
+}
+
+
+/* campo escondido en el formulario _______________ */
+
+#vuelta {
+    display: none;
+}
+#resultado {
+    display: none;
+}
+#mensaje {
+    resize: vertical;
+}
+
+
+/* mozzilla _________________________________ 
+*/
+
+textarea,
+input {
+    background-color: #fbfbfc;
+}
+
+.invalido {
+    border-color: #900;
+    background-color: rgb(252, 241, 241);
+}
+
+.valido {
+    border-color: rgb(220, 249, 231);
+    background-color: rgb(221, 255, 235);
+}
+
+
+/* This is the style of our error messages */
+
+.error {
+    width: 100%;
+    display: none;
+    font-size: 90%;
+    color: rgb(95, 3, 3);
+    background-color: #ffffff;
+    border-radius: 0 0 5px 5px;
+    box-sizing: border-box;
+}
+
+.error.active {
+    display: inline;
+}
+
+
+/* _______________________________________________________________ */
+
+
+/* Del preloader */
+
+#loader-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+}
+
+#loader {
+    display: block;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    width: 150px;
+    height: 150px;
+    margin: -75px 0 0 -75px;
+    border: 3px solid transparent;
+    border-top-color: white;
+    border-radius: 100%;
+    -webkit-animation: spin 2s linear infinite;
+    animation: spin 2s linear infinite;
+    z-index: 1001;
+}
+
+#loader:before {
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    right: 5px;
+    bottom: 5px;
+    border: 3px solid transparent;
+    border-top-color: yellow;
+    border-radius: 100%;
+    -webkit-animation: spin 3s linear infinite;
+    animation: spin 3s linear infinite;
+}
+
+#loader:after {
+    content: "";
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    right: 12px;
+    bottom: 12px;
+    border: 3px solid transparent;
+    border-top-color: orange;
+    border-radius: 100%;
+    -webkit-animation: spin 1.5s linear infinite;
+    animation: spin 1.5s linear infinite;
+}
+
+@-webkit-keyframes spin {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes spin {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+#loader-wrapper .loader-section {
+    position: fixed;
+    top: 0;
+    background: #347284;
+    width: 51%;
+    height: 100%;
+    z-index: 1000;
+}
+
+#loader-wrapper .loader-section.section-left {
+    left: 0
+}
+
+#loader-wrapper .loader-section.section-right {
+    right: 0;
+}
+
+
+/* Loaded Styles */
+
+.loaded #loader-wrapper .loader-section.section-left {
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
+    -webkit-transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1.000);
+    transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1.000);
+}
+
+.loaded #loader-wrapper .loader-section.section-right {
+    -webkit-transform: translateX(100%);
+    transform: translateX(100%);
+    -webkit-transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1.000);
+    transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1.000);
+}
+
+.loaded #loader {
+    opacity: 0;
+    -webkit-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+}
+
+.loaded #loader-wrapper {
+    visibility: hidden;
+    -webkit-transform: translateY(-100%);
+    transform: translateY(-100%);
+    -webkit-transition: all 0.3s 1s ease-out;
+    transition: all 0.3s 1s ease-out;
+}
+
+
+/* fin preloader */
+
+
+/* Copyright (c) 2018 by Chandra Shekhar (https://codepen.io/chandrashekhar/pen/MXJPbB) */
+
+.shekcontainer {
+    position: fixed;
+    bottom: 0.5rem;
+    left: 0;
+    right: 0;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sheksocialShare {
+    height: 80px;
+    width: 80px;
+    transition: all ease 0.5s;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    /*for trigger*/
+}
+
+.sheksocialShare .shektrigger {
+    background-color: #357288;
+    color: #fff;
+    font-size: 1.5rem;
+    display: none;
+    height: 60px;
+    width: 60px;
+    position: absolute;
+    right: 0;
+    justify-content: center;
+    align-items: center;
+    border-radius: 500px;
+    transition: all ease 0.25s;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.6);
+}
+
+.sheksocialShare .shektrigger:hover {
+    cursor: pointer;
+}
+
+.sheksocialShare .shekmenu {
+    display: flex;
+    justify-content: space-around;
+    flex-grow: 1;
+}
+
+.sheksocialShare .shekmenu .shekicon {
+    display: inline-flex;
+    justify-content: center;
+    align-items: flex-start;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.sheksocialShare .shekmenu .shekicon i.fa {
+    border-radius: 500px;
+    background-color: #357288;
+    height: 0px;
+    width: 0px;
+    display: flex;
+    color: #ffffff;
+    justify-content: center;
+    align-items: center;
+    transform: scale(0);
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.6);
+}
+
+
+/*
+*Active States
+*/
+
+.sheksocialShare.shekactive {
+    width: 480px;
+    padding-right: 40px;
+    /** for trigger **/
+    /** trigger end **/
+    /** for menu **/
+    /** menu end **/
+}
+
+.sheksocialShare.shekactive .shektrigger {
+    background-color: transparent;
+    height: 50px;
+    width: 50px;
+    box-shadow: none;
+}
+
+.sheksocialShare.shekactive .shektrigger::before,
+.sheksocialShare.shekactive .shektrigger::after {
+    content: "";
+    position: absolute;
+    height: 50%;
+    width: 0;
+    border-left: 4px solid #1a1a1a;
+}
+
+.sheksocialShare.shekactive .shektrigger::before {
+    animation: rotateBefore 1s ease forwards;
+}
+
+.sheksocialShare.shekactive .shektrigger::after {
+    transform: rotate(-45deg);
+}
+
+.sheksocialShare.shekactive .shektrigger i.fa {
+    visibility: hidden;
+}
+
+.sheksocialShare.shekactive .shekmenu .shekicon i.fa {
+    height: 20px;
+    width: 20px;
+    padding: 1.2rem;
+    animation: blow 0.5s ease forwards;
+}
+
+@media (max-width: 768px) {
+    .sheksocialShare.shekactive .shekmenu .shekicon i.fa {
+        padding: 0.9rem;
+    }
+}
+
+.sheksocialShare.shekactive .shekmenu .shekicon:nth-child(4) i.fa {
+    animation-delay: 0.15s;
+}
+
+.sheksocialShare.shekactive .shekmenu .shekicon:nth-child(3) i.fa {
+    animation-delay: 0.3s;
+}
+
+.sheksocialShare.shekactive .shekmenu .shekicon:nth-child(2) i.fa {
+    animation-delay: 0.45s;
+}
+
+.sheksocialShare.shekactive .shekmenu .shekicon:nth-child(1) i.fa {
+    animation-delay: 0.6s;
+}
+
+.sheksocialShare.shekactive .shekmenu .shekicon:nth-child(0) i.fa {
+    animation-delay: 0.75s;
+}
+
+@keyframes blow {
+    0% {
+        transform: scale(0);
+    }
+    100% {
+        transform: scale(1.5);
+    }
+}
+
+@keyframes rotateBefore {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(225deg);
+    }
+}
+
+
+/* Fin sheksocialShare
+/* Fin */

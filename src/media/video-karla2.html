@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<title>AvoidNote Musical Productions</title>
+	<meta content="width=device-width, initial-scale=1.0" name="viewport">
+	<meta content="" name="keywords">
+	<meta content="" name="description">
+	<link href="../lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  	<style type="text/css">
+	  body {
+	  	margin: 0px;
+	  	border: 0px;
+	  	padding: 0px;
+      overflow-y: hidden;
+      
+		}
+		.video {
+			overflow-y: hidden;
+		}
+
+ /* Copyright (c) 2018 by Chandra Shekhar (https://codepen.io/chandrashekhar/pen/MXJPbB) */
+
+.shekcontainer {
+  position: fixed;
+  top:0;
+  padding-top: 1rem;
+  bottom: 94%;
+  left: 0;
+  right: 0;
+  background: transparent;
+  display: flex;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+  z-index:2147483647;
+}
+
+.sheksocialShare {
+  height: 4rem;
+  width: 100%;
+  transition: all ease 0.5s;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  /*for trigger*/
+}
+
+.sheksocialShare .shektrigger {
+  background-color: transparent;
+  color: #ffffff;
+  font-size: 1.3rem;
+  display: inline-flex; 
+  height: 1.3rem;
+  width: 1.3rem;
+  right: 0;
+  justify-content: center;
+  align-items: center;
+  transition: all ease 0.25s;
+}
+.sheksocialShare .shektrigger:hover {
+  cursor: pointer;
+}
+.sheksocialShare .shekmenu {
+  display: flex;
+  justify-content: space-around;
+  flex-grow: 1;
+
+}
+.sheksocialShare .shekmenu .shekicon a {
+  display: inline-flex;
+  justify-content: center;
+  align-items: flex-start;
+  text-decoration: none;
+}
+.sheksocialShare .shekmenu .shekicon a i.fa {
+  border-radius: 33.3rem;
+  background-color: transparent;
+  height: 0px;
+  width: 0px;
+  display: flex;
+  color: #ffffff;
+  justify-content: center;
+  align-items: center;
+  transform: scale(0);
+}
+
+/*
+*Active States
+*/
+.sheksocialShare.shekactive {
+  width: 100%;
+  
+  /** for trigger **/
+  /** trigger end **/
+  /** for menu **/
+  /** menu end **/
+}
+.sheksocialShare.shekactive .shektrigger {
+  background-color: transparent;
+  height: 3.3rem;
+  width: 3.3rem;
+  box-shadow: none;
+}
+.sheksocialShare.shekactive .shektrigger::before, .sheksocialShare.shekactive .shektrigger::after {
+  content: "";
+  position: absolute;
+  height: 1.5rem;
+  width: 0;
+  border-left: 4px solid #ffffff;
+}
+.sheksocialShare.shekactive .shektrigger::before {
+  animation: rotateBefore 1s ease forwards;
+}
+.sheksocialShare.shekactive .shektrigger::after {
+  transform: rotate(-45deg);
+}
+.sheksocialShare.shekactive .shektrigger i.fa {
+  visibility: hidden;
+}
+.sheksocialShare.shekactive .shekmenu .shekicon a i.fa {
+  height: 1.6rem;
+  width: 1.6rem;
+  padding: 0.3rem;
+  animation: blow 0.5s ease forwards;
+}
+
+@media (max-width: 768px) {
+  .sheksocialShare.shekactive .shekmenu .shekicon a i.fa {
+    padding: 0.6rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .shekcontainer {
+    padding-top: 1.5rem;
+  }
+  .sheksocialShare .shektrigger {
+    background-color: transparent;
+    font-size: 1.6rem;
+    height: 1.6rem;
+    width: 1.6rem;
+    border-radius: 33.3rem;
+
+  }
+
+}
+
+.sheksocialShare.shekactive .shekmenu .shekicon:nth-child(4) a i.fa {
+  animation-delay: 0.15s;
+}
+.sheksocialShare.shekactive .shekmenu .shekicon:nth-child(3) a i.fa {
+  animation-delay: 0.3s;
+}
+.sheksocialShare.shekactive .shekmenu .shekicon:nth-child(2) a i.fa {
+  animation-delay: 0.45s;
+}
+.sheksocialShare.shekactive .shekmenu .shekicon:nth-child(1) a i.fa {
+  animation-delay: 0.6s;
+}
+.sheksocialShare.shekactive .shekmenu .shekicon:nth-child(0) a i.fa {
+  animation-delay: 0.75s;
+}
+
+@keyframes blow {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1.5);
+  }
+}
+@keyframes rotateBefore {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(225deg);
+  }
+}
+
+	</style>
+ </head>
+ <body>
+
+	<div class="shekcontainer">
+			<!-- Copyright (c) 2018 by Chandra Shekhar (https://codepen.io/chandrashekhar/pen/MXJPbB) -->
+			<div class="sheksocialShare">
+		
+				<div class="shekmenu">
+				<div class="shekicon">
+                    <a onclick="return popitup('http://www.linkedin.com/shareArticle?mini=true&url=https://bit.ly/2SfBPNG&source=https://avoidnote.studio')" href="https://www.linkedin.com/shareArticle?mini=true&url=https://bit.ly/2SfBPNG">
+                    <!-- en linkedin hay que poner el video.html en las demás el video.mp4-->
+					<i class="fa fa-linkedin"></i>
+					</a>
+				</div>
+				<div class="shekicon">
+					<a onclick="return popitup('https://twitter.com/intent/tweet?text=AvoidNote%20Musical%20Production%0D%0A&amp;url=https%3A%2F%2Fbit.ly/2FIydlJ')" href="https://twitter.com/intent/tweet?text=AvoidNote%20Musical%20Production%0D%0A&amp;url=https%3A%2F%2Fbit.ly/2FIydlJ">
+					<i class="fa fa-twitter"></i>
+					</a>
+        </div>
+        <script>
+          if (navigator.userAgent.match(/iPhone|Android/i)) {
+				    document.write('<div class="shekicon">');
+            document.write('<a href="https://wa.me/?text=Avoid%20Note%20Musical%20Productions%20%0D%0Ahttps%3A%2F%2Fbit.ly/2FIydlJ" target="_blank">');
+            document.write('<i class="fa fa-whatsapp"></i></a></div>');
+          }       
+        </script>
+				<div class="shekicon">
+					<a onclick="return popitup('https://facebook.com/sharer/sharer.php?u=https%3A%2F%2Fbit.ly/2FIydlJ')" href="https://facebook.com/sharer/sharer.php?u=https%3A%2F%2Fbit.ly/2FIydlJ">
+					<i class="fa fa-facebook"></i>
+					</a>
+				</div>
+				<div class="shekicon">
+					<a onclick="return popitup('https://telegram.me/share/url?text=Musica%20Personalizada%20para%20tus%20Producciones%20Multimedia%20&amp;url=https%3A%2F%2Fbit.ly/2FIydlJ')" href="https://t.me/share/url?text=Musica%20Personalizada%20para%20tus%20Producciones%20Multimedia%20&amp;url=https%3A%2F%2Fbit.ly/2FIydlJ">
+					<i class="fa fa-telegram"></i>
+					</a>
+				</div>
+				</div>	
+				<div class="shektrigger">
+					<i class="fa fa-share-alt"></i>
+				</div>
+			</div>
+			</div>
+
+ 	<div >
+	 	<video width="100%" height= "auto" preload autoplay controls id="myVideo" poster="karla2.webP">
+	      <source src="karla2.mp4" type="video/mp4">
+	      Your browser does not support HTML5 video.
+		</video>
+	</div>
+	<script src="../lib/jquery/jquery.min.js"></script>
+  <script src="../lib/jquery/jquery-migrate.min.js"></script>
+	<script>
+      function tamVentana() {
+        var tam = [0, 0];
+        if (typeof window.innerWidth != 'undefined')
+        {
+          tam = [window.innerWidth,window.innerHeight];
+        }
+        else if (typeof document.documentElement != 'undefined'
+            && typeof document.documentElement.clientWidth !=
+            'undefined' && document.documentElement.clientWidth != 0)
+        {
+          tam = [
+              document.documentElement.clientWidth,
+              document.documentElement.clientHeight
+          ];
+        }
+        else   {
+          tam = [
+              document.getElementsByTagName('body')[0].clientWidth,
+              document.getElementsByTagName('body')[0].clientHeight
+          ];
+        }
+        return tam;
+      }
+    var ventana = tamVentana();
+    var ancho = ventana[0] * 0.8;
+    var alto = ventana[1] * 0.8;
+    var izqui = (ventana[0] - ancho)/2;
+    var arriba = (ventana[1] - alto)/2;
+    var forma = "scrollbars=yes,resizable=yes,replace=false,toolbar=no,width=" + ancho + ",height=" + alto + ",left=" + izqui + ",top=" + arriba;
+		jQuery(document).ready(function($) {
+	  // Toggle SHARE icons
+			$(".shektrigger").on('click',function(){
+				$(".sheksocialShare").toggleClass("shekactive");
+			});
+		});
+  </script>
+  
+  
+
+ </body>
+ </html>

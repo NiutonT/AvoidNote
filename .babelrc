@@ -1,0 +1,19 @@
+{
+  "plugins": ["@babel/plugin-syntax-dynamic-import"],
+
+  "presets": [
+    [
+      "@babel/preset-env",
+      {
+        "modules": false
+      }
+    ]
+  ],
+  "env": {
+    "development": {
+      "plugins": [
+        "annotate-console-log"
+      ]
+    }
+  }
+}
